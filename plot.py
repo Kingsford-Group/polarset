@@ -202,7 +202,7 @@ if __name__ == "__main__":
     parallel_plot(parse_trajectory, ("multi_lax", "hg38_all", 10, kvals),
                   ("multi_lax", "hg38_all", 100, kvals), "hg38_traj",
                   bbox=(0.52, 0), rect=[0, 0.15, 1, 1], leg_cols=5)
-    quit()
+    #  quit()
 
     with open(master_data) as f:
         for l in f:
@@ -268,7 +268,7 @@ if __name__ == "__main__":
     #  _scramble_kvals = list(range(10, 21))
     parallel_plot(plot_res_single_w, ("scramble", 10, kvals, names, True), ("scramble", 100, kvals, names, True),
                   "scramble", bbox=(0.52, 0), rect=[0, 0.1, 1, 1])
-    quit()
+    #  quit()
 
     parallel_plot(plot_energy_single_w, ("hg38_all", 10, kvals), ("hg38_all", 100, kvals),
                   "hg38_estat", bbox=(0.55, 0), rect=[0, 0.05, 1, 1])
